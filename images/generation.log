@@ -1,0 +1,9 @@
+[00:31:09] Models: gemini-2.0-flash-exp-image-generation, gemini-2.5-flash-image, gemini-3-pro-image-preview
+[00:31:09] Output: /Users/apple/Desktop/クロスリンク様/LPについて/images
+[00:31:09] Total: 12, Remaining: 12
+[00:31:09] ==================================================
+[00:31:09] [1/12] hero-mockup
+[00:31:09]   [hero-mockup] attempt 1, model: gemini-2.0-flash-exp-image-generation
+[00:31:09]   [hero-mockup] rate limited (gemini-2.0-flash-exp-image-generation). waiting 65s...
+[00:32:14]   [hero-mockup] attempt 2, model: gemini-2.0-flash-exp-image-generation
+[00:32:15]   [hero-mockup] rate limited (gemini-2.0-flash-exp-image-generation). waiting 130s...

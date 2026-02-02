@@ -1,7 +1,5 @@
-# Claude Code Harness state files
-.claude/state/
-.claude/sessions/
-.claude/memory/
+# Claude Code Harness
+.claude/
 
 # OS files
 .DS_Store

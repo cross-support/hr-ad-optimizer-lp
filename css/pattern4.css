@@ -994,6 +994,97 @@ body.p4-body {
 }
 
 /* ========================================
+   4b. Image Styles (Generated visuals)
+   ======================================== */
+
+/* Hero Image */
+.p4-hero__img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: var(--radius-xl);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Problems Icons */
+.p4-problems__icon img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Solution Step Images */
+.p4-solution__step-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.p4-solution__step-img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Features B/A Image */
+.p4-features__ba-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Evolution Image + Labels */
+.p4-evolution__visual {
+  text-align: center;
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.p4-evolution__img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: var(--radius-xl);
+}
+
+.p4-evolution__labels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.p4-evolution__label h3 {
+  color: var(--p4-text-white);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.p4-evolution__label p {
+  color: var(--p4-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.8;
+}
+
+/* Use Cases Images */
+.p4-usecases__img {
+  width: calc(100% + var(--space-2xl) * 2);
+  margin: calc(var(--space-2xl) * -1) calc(var(--space-2xl) * -1) var(--space-xl);
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+/* ========================================
    5. Animations
    ======================================== */
 
@@ -1122,19 +1213,9 @@ body.p4-body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Evolution Cycle */
-  .p4-evolution__cycle {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .p4-evolution__step {
-    max-width: 100%;
-  }
-
-  .p4-evolution__arrow {
-    transform: rotate(90deg);
-    padding: var(--space-lg) 0;
+  /* Evolution Labels */
+  .p4-evolution__labels {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1191,17 +1272,23 @@ body.p4-body {
   }
 
   /* Evolution */
-  .p4-evolution__cycle {
-    flex-direction: column;
+  .p4-evolution__labels {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
   }
 
-  .p4-evolution__step {
+  .p4-evolution__label h3 {
+    font-size: var(--font-size-md);
+  }
+
+  /* Features B/A Image */
+  .p4-features__ba-img {
     max-width: 100%;
   }
 
-  .p4-evolution__arrow {
-    transform: rotate(90deg);
-    padding: var(--space-lg) 0;
+  /* Solution Step Images */
+  .p4-solution__step-img {
+    max-width: 100%;
   }
 
   /* Stats */
