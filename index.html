@@ -33,9 +33,9 @@
     }
     .selector__cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: var(--space-xl);
-      max-width: 1000px;
+      max-width: 900px;
       width: 100%;
     }
     .selector__card {
@@ -82,6 +82,7 @@
     .selector__card-tag--emotion { background: #fff3e0; color: #e65100; }
     .selector__card-tag--logic { background: #e8f5e9; color: #2e7d32; }
     .selector__card-tag--visual { background: #e3f2fd; color: #1565c0; }
+    .selector__card-tag--advanced { background: #ede7f6; color: #4527a0; }
     @media (max-width: 768px) {
       .selector__cards { grid-template-columns: 1fr; }
       .selector__title { font-size: var(--font-size-2xl); }
@@ -91,7 +92,7 @@
 <body>
   <div class="selector">
     <h1 class="selector__title">HR Ad-Optimizer LP</h1>
-    <p class="selector__subtitle">3パターンのランディングページデザイン</p>
+    <p class="selector__subtitle">4パターンのランディングページデザイン</p>
     <div class="selector__cards">
       <a href="pattern1.html" class="selector__card">
         <div class="selector__card-number">01</div>
@@ -110,6 +111,12 @@
         <h2 class="selector__card-title">ビジュアル訴求型</h2>
         <p class="selector__card-desc">レイアウト特化。UIモックアップとステップフローで直感的に伝える構成。</p>
         <span class="selector__card-tag selector__card-tag--visual">Visual-driven</span>
+      </a>
+      <a href="pattern4.html" class="selector__card">
+        <div class="selector__card-number">04</div>
+        <h2 class="selector__card-title">全部盛り型</h2>
+        <p class="selector__card-desc">先進デザイン特化。グラスモーフィズム・ネオン・パーティクルを駆使した最先端の構成。</p>
+        <span class="selector__card-tag selector__card-tag--advanced">Advanced</span>
       </a>
     </div>
   </div>

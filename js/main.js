@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, observerOptions);
 
   // Exclude hero sections from animation
-  const heroSelectors = ['.p1-hero', '.p2-concept', '.p3-hero'];
+  const heroSelectors = ['.p1-hero', '.p2-concept', '.p3-hero', '.p4-hero'];
 
   document.querySelectorAll('.section-padding').forEach(section => {
     const isHeroSection = heroSelectors.some(selector => section.classList.contains(selector.slice(1)));
