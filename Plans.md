@@ -18,27 +18,27 @@
 ## Tasks
 
 ### Phase 1: 共通基盤（リセット＆再構築）
-- [ ] 1. 既存ファイルリセット・新ファイル構造作成 `cc:TODO`
-- [ ] 2. 共通CSS（変数・リセット・グリッド・ボタン・コンポーネント） `cc:TODO`
-- [ ] 3. 共通JS（スムーズスクロール・ハンバーガー・アニメーション） `cc:TODO`
+- [x] 1. 既存ファイルリセット・新ファイル構造作成 `cc:done`
+- [x] 2. 共通CSS（変数・リセット・グリッド・ボタン・コンポーネント） `cc:done`
+- [x] 3. 共通JS（スムーズスクロール・ハンバーガー・アニメーション） `cc:done`
 
 ### Phase 2: パターン1（LP構成案.docx ベース）
-- [ ] 4. P1: Header + ファーストビュー `cc:TODO`
-- [ ] 5. P1: 導入（The Reality）+ 解決策（The Solution） `cc:TODO`
-- [ ] 6. P1: 攻め（Attack）+ 守り（Defense）+ 進化（Evolution） `cc:TODO`
-- [ ] 7. P1: 開発者情報 + 利用シーン + クロージングCTA `cc:TODO`
+- [x] 4. P1: Header + ファーストビュー `cc:done`
+- [x] 5. P1: 導入（The Reality）+ 解決策（The Solution） `cc:done`
+- [x] 6. P1: 攻め（Attack）+ 守り（Defense）+ 進化（Evolution） `cc:done`
+- [x] 7. P1: 開発者情報 + 利用シーン + クロージングCTA `cc:done`
 
 ### Phase 3: パターン2（戦略定義書 ベース）
-- [ ] 8. P2: Header + プロダクトコンセプト（FV） `cc:TODO`
-- [ ] 9. P2: ターゲット戦略 + Pain（課題） `cc:TODO`
-- [ ] 10. P2: システム仕様・処理モード + ハイブリッドエンジン `cc:TODO`
-- [ ] 11. P2: 承認UI + 学習機能 + ポジショニング + CTA `cc:TODO`
+- [x] 8. P2: Header + プロダクトコンセプト（FV） `cc:done`
+- [x] 9. P2: ターゲット戦略 + Pain（課題） `cc:done`
+- [x] 10. P2: システム仕様・処理モード + ハイブリッドエンジン `cc:done`
+- [x] 11. P2: 承認UI + 学習機能 + ポジショニング + CTA `cc:done`
 
 ### Phase 4: パターン3（ワイヤーフレーム ベース）
-- [ ] 12. P3: Header + FV（2カラム: コピー + UIモックアップ） `cc:TODO`
-- [ ] 13. P3: 導入課題カード + 解決策ステップフロー `cc:TODO`
-- [ ] 14. P3: 機能詳細（タブ/セクション分割）+ 進化サイクル図 `cc:TODO`
-- [ ] 15. P3: 開発者プロフィール + 導入事例 + CTA `cc:TODO`
+- [x] 12. P3: Header + FV（2カラム: コピー + UIモックアップ） `cc:done`
+- [x] 13. P3: 導入課題カード + 解決策ステップフロー `cc:done`
+- [x] 14. P3: 機能詳細（タブ/セクション分割）+ 進化サイクル図 `cc:done`
+- [x] 15. P3: 開発者プロフィール + 導入事例 + CTA `cc:done`
 
 ### Phase 5: 仕上げ
 - [ ] 16. 全パターン共通: スクロールアニメーション・レスポンシブ最終調整 `cc:TODO`
