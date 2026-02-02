@@ -1,8 +1,8 @@
 # HR Ad-Optimizer LP Implementation Plan
 
 ## Overview
-求人原稿最適化プラットフォーム「HR Ad-Optimizer」のランディングページを **3パターン** 実装する。
-各 .docx ファイルがそれぞれ独立したLP構成案であり、3つのHTMLを作成する。
+求人原稿最適化プラットフォーム「HR Ad-Optimizer」のランディングページを **4パターン** 実装する。
+各 .docx ファイルがそれぞれ独立したLP構成案であり、3つのHTMLを作成。追加で全部盛り型パターン4を実装。
 
 - **Tech Stack**: HTML + CSS + JavaScript（フレームワークなし）
 - **Design Concept**: 信頼感（青・紺）× 先進性（テック感）× 親しみやすさ（余白多め）- 共通デザインベース
@@ -14,6 +14,7 @@
 | 1 | LP構成案.docx | コピーライティング特化・感情訴求型 | pattern1.html |
 | 2 | 求人原稿最適化SaaS 開発要件 戦略定義書 ver3.0.docx | 機能・仕様特化・ロジカル訴求型 | pattern2.html |
 | 3 | 求人原稿最適化プラットフォーム LP ワイヤーフレーム.docx | レイアウト特化・ビジュアル訴求型 | pattern3.html |
+| 4 | （全パターン統合） | 全部盛り・先進デザイン特化型 | pattern4.html |
 
 ## Tasks
 
@@ -44,3 +45,9 @@
 - [x] 16. 全パターン共通: スクロールアニメーション・レスポンシブ最終調整 `cc:done`
 - [x] 17. パターン切替ナビ（index.html から3パターンへのリンク） `cc:done`
 - [x] 18. Codexレビュー + 指摘修正 `cc:done`
+
+### Phase 6: パターン4（全部盛り・Digital Cosmos）
+- [x] 19. P4: 既存ファイル更新（index.html 4枚目、main.js hero除外、全パターンnav） `cc:done`
+- [x] 20. P4: CSS基盤（ダークテーマ・グラスモーフィズム・ネオン・流体タイポ） `cc:done`
+- [x] 21. P4: HTML全10セクション + JS（パーティクル・カウンター・パララックス） `cc:done`
+- [x] 22. P4: レビュー＆CSS-HTML整合性修正 `cc:done`
