@@ -11,11 +11,11 @@
 ## Tasks
 
 ### Phase 1: プロジェクトセットアップ
-- [ ] 1. プロジェクト構造作成（HTML/CSS/JS/assets） `cc:TODO`
+- [x] 1. プロジェクト構造作成（HTML/CSS/JS/assets） `cc:done`
 
 ### Phase 2: 共通パーツ・ベーススタイル
-- [ ] 2. CSS変数・リセット・ベーススタイル定義 `cc:TODO`
-- [ ] 3. レスポンシブブレークポイント・グリッドシステム `cc:TODO`
+- [x] 2. CSS変数・リセット・ベーススタイル定義 `cc:done`
+- [x] 3. レスポンシブブレークポイント・グリッドシステム `cc:done`
 
 ### Phase 3: 各セクション実装（レイアウト + コピー）
 - [ ] 4. Header（Sticky Header + ナビゲーション + CTAボタン） `cc:TODO`
