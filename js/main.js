@@ -39,8 +39,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, observerOptions);
 
+  // Exclude hero sections from animation
+  const heroSelectors = ['.p1-hero', '.p2-concept', '.p3-hero'];
+
   document.querySelectorAll('.section-padding').forEach(section => {
-    section.classList.add('animate-ready');
-    observer.observe(section);
+    const isHeroSection = heroSelectors.some(selector => section.classList.contains(selector.slice(1)));
+    if (!isHeroSection) {
+      section.classList.add('animate-ready');
+      observer.observe(section);
+    }
+  });
+
+  // Add staggered animation to grid children
+  document.querySelectorAll('.grid').forEach(grid => {
+    const parentSection = grid.closest('.section-padding');
+    const isHeroSection = heroSelectors.some(selector => parentSection?.classList.contains(selector.slice(1)));
+    if (parentSection && !isHeroSection) {
+      parentSection.classList.add('animate-ready');
+      observer.observe(parentSection);
+    }
   });
 });

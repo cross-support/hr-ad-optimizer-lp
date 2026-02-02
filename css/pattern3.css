@@ -624,6 +624,15 @@
     direction: ltr;
   }
 
+  .p3-solution__ba {
+    grid-template-columns: 1fr;
+  }
+
+  .p3-solution__action-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .p3-evolution__cycle {
     flex-direction: column;
   }
