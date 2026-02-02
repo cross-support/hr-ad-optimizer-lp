@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('header__hamburger--active');
       nav.classList.toggle('header__nav--active');
+      const isExpanded = hamburger.classList.contains('header__hamburger--active');
+      hamburger.setAttribute('aria-expanded', isExpanded);
     });
   }
 
@@ -24,7 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       // Close mobile menu
       if (nav) nav.classList.remove('header__nav--active');
-      if (hamburger) hamburger.classList.remove('header__hamburger--active');
+      if (hamburger) {
+        hamburger.classList.remove('header__hamburger--active');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
     });
   });
 
