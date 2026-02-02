@@ -443,6 +443,34 @@ body.p4-body {
   color: var(--color-success);
 }
 
+.p4-attack__content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-lg);
+}
+
+.p4-attack__content ul li {
+  padding: var(--space-sm) 0;
+  color: var(--p4-text-muted);
+  position: relative;
+  padding-left: var(--space-lg);
+}
+
+.p4-attack__content ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--p4-neon-orange);
+  font-weight: 700;
+}
+
+.p4-attack__arrow {
+  text-align: center;
+  color: var(--p4-neon-orange);
+  font-size: var(--font-size-xl);
+  margin: var(--space-md) 0;
+}
+
 /* ----- Defense Section ----- */
 .p4-defense {
   background: var(--p4-bg-section-alt);
@@ -508,6 +536,27 @@ body.p4-body {
   color: var(--p4-neon-teal);
   font-weight: 700;
   text-shadow: 0 0 10px rgba(0, 210, 211, 0.5);
+}
+
+.p4-defense__content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-lg);
+}
+
+.p4-defense__content ul li {
+  padding: var(--space-sm) 0;
+  color: var(--p4-text-muted);
+  position: relative;
+  padding-left: var(--space-lg);
+}
+
+.p4-defense__content ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--p4-neon-teal);
+  font-weight: 700;
 }
 
 /* ----- Stats Section ----- */
@@ -582,6 +631,35 @@ body.p4-body {
 .p4-modes__card p {
   color: var(--p4-text-muted);
   font-size: var(--font-size-sm);
+}
+
+.p4-modes__icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+.p4-modes__features {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-lg);
+}
+
+.p4-modes__features li {
+  padding: var(--space-sm) 0;
+  color: var(--p4-text-muted);
+  font-size: var(--font-size-sm);
+  position: relative;
+  padding-left: var(--space-lg);
+}
+
+.p4-modes__features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--p4-neon-blue);
+  font-weight: 700;
 }
 
 /* ----- Approval Section ----- */
@@ -753,6 +831,21 @@ body.p4-body {
 .p4-authority__cycle-step p {
   color: var(--p4-text-muted);
   font-size: var(--font-size-sm);
+}
+
+.p4-authority__cycle-icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-sm);
+}
+
+.p4-authority__story {
+  margin-top: var(--space-xl);
+}
+
+.p4-authority__story p {
+  color: var(--p4-text-muted);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
 }
 
 /* ----- CTA Section ----- */
