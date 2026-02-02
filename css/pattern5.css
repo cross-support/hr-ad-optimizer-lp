@@ -172,7 +172,7 @@ body.p5-body {
 }
 
 /* ========================================
-   5. Hero Section
+   5. Hero Section (Background Image)
    ======================================== */
 
 .p5-hero {
@@ -180,45 +180,38 @@ body.p5-body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: var(--p5-white);
   overflow: hidden;
   padding: var(--space-4xl) 0;
 }
 
-/* Decorative Blobs */
-.p5-hero__decoration {
+.p5-hero .container {
+  max-width: none;
+  margin-left: 4%;
+  margin-right: auto;
+  width: 95%;
+}
+
+/* Background Image */
+.p5-hero__bg {
   position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
+  inset: 0;
+  background: url('../images/Front.png') center center / cover no-repeat;
+  z-index: 0;
 }
 
-.p5-hero__decoration--1 {
-  width: 500px;
-  height: 500px;
-  top: -150px;
-  right: -100px;
-  background: radial-gradient(circle, rgba(65, 196, 203, 0.08) 0%, transparent 70%);
-  animation: p5-float 20s ease-in-out infinite;
-}
-
-.p5-hero__decoration--2 {
-  width: 400px;
-  height: 400px;
-  bottom: -100px;
-  left: -100px;
-  background: radial-gradient(circle, rgba(6, 216, 94, 0.06) 0%, transparent 70%);
-  animation: p5-float 15s ease-in-out infinite reverse;
-}
-
-.p5-hero__grid {
-  align-items: center;
-  gap: var(--space-3xl);
+/* Overlay disabled — image shows at full opacity */
+.p5-hero__overlay {
+  display: none;
 }
 
 .p5-hero__content {
   position: relative;
   z-index: 2;
-  padding: var(--space-xl) 0;
+  padding: var(--space-2xl) 0;
+  max-width: 55%;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
 }
 
 .p5-hero__title {
@@ -236,6 +229,8 @@ body.p5-body {
   background-clip: text;
   margin-bottom: var(--space-md);
   font-weight: 700;
+  font-size: clamp(2rem, 5vw + 0.5rem, 3rem);
+  white-space: nowrap;
 }
 
 .p5-hero__subtitle {
@@ -254,26 +249,18 @@ body.p5-body {
   gap: var(--space-sm);
   flex-wrap: wrap;
   margin-bottom: var(--space-xl);
+  padding-left: 2rem;
+}
+
+.p5-hero__content .p5-btn-cta {
+  margin-left: 2rem;
 }
 
 .p5-hero__note {
   font-size: var(--font-size-sm);
   color: var(--p5-text-light);
   margin-top: var(--space-md);
-}
-
-/* Hero Visual */
-.p5-hero__visual {
-  position: relative;
-  z-index: 2;
-}
-
-.p5-hero__img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: var(--radius-xl);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  padding-left: 2rem;
 }
 
 /* ========================================
@@ -950,9 +937,7 @@ body.p5-body {
 
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
-  .p5-hero__decoration,
-  .p5-cta__decoration,
-  .p5-hero__img {
+  .p5-cta__decoration {
     animation: none;
   }
 
@@ -1021,17 +1006,14 @@ body.p5-body {
     padding: var(--space-3xl) var(--space-lg);
   }
 
-  .p5-hero__grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-2xl);
+  .p5-hero__accent {
+    white-space: normal;
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
   }
 
-  .p5-hero__visual {
-    order: -1;
-  }
-
-  .p5-hero__decoration {
-    display: none;
+  .p5-hero__content {
+    max-width: 100%;
+    border-radius: var(--radius-lg);
   }
 
   /* Problems Grid */
