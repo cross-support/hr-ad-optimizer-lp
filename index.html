@@ -3,192 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <!-- SEO Meta Tags -->
-  <title>HR Ad-Optimizer - 求人原稿最適化プラットフォーム</title>
-  <meta name="description" content="求人原稿最適化プラットフォーム - AI技術で求人広告のパフォーマンスを最大化">
-
-  <!-- OGP Meta Tags -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="HR Ad-Optimizer">
-  <meta property="og:description" content="求人原稿最適化プラットフォーム">
-  <meta property="og:site_name" content="HR Ad-Optimizer">
-  <meta property="og:locale" content="ja_JP">
-
-  <!-- Google Fonts -->
+  <title>HR Ad-Optimizer LP - パターン選択</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    .selector {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #f8f9fa 0%, #eef3f8 100%);
+      padding: var(--space-xl);
+    }
+    .selector__title {
+      font-family: var(--font-heading);
+      font-size: var(--font-size-3xl);
+      color: var(--color-primary);
+      margin-bottom: var(--space-sm);
+      text-align: center;
+    }
+    .selector__subtitle {
+      color: var(--color-text-light);
+      margin-bottom: var(--space-3xl);
+      text-align: center;
+    }
+    .selector__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-xl);
+      max-width: 1000px;
+      width: 100%;
+    }
+    .selector__card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--space-2xl);
+      box-shadow: var(--shadow-md);
+      text-align: center;
+      transition: all var(--transition);
+      text-decoration: none;
+      color: var(--color-text);
+      border: 2px solid transparent;
+    }
+    .selector__card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--color-primary);
+    }
+    .selector__card-number {
+      font-family: var(--font-heading);
+      font-size: var(--font-size-4xl);
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: var(--space-md);
+    }
+    .selector__card-title {
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      margin-bottom: var(--space-sm);
+    }
+    .selector__card-desc {
+      color: var(--color-text-light);
+      font-size: var(--font-size-sm);
+      line-height: 1.7;
+    }
+    .selector__card-tag {
+      display: inline-block;
+      margin-top: var(--space-md);
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: var(--font-size-xs);
+      font-weight: 600;
+    }
+    .selector__card-tag--emotion { background: #fff3e0; color: #e65100; }
+    .selector__card-tag--logic { background: #e8f5e9; color: #2e7d32; }
+    .selector__card-tag--visual { background: #e3f2fd; color: #1565c0; }
+    @media (max-width: 768px) {
+      .selector__cards { grid-template-columns: 1fr; }
+      .selector__title { font-size: var(--font-size-2xl); }
+    }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header id="header" class="header">
-    <div class="container header__inner">
-      <div class="header__logo">
-        <a href="#">HR Ad-Optimizer</a>
-      </div>
-      <nav class="header__nav" id="nav">
-        <ul class="header__nav-list">
-          <li><a href="#features">機能</a></li>
-          <li><a href="#authority">開発者</a></li>
-          <li><a href="#usecases">導入事例</a></li>
-        </ul>
-      </nav>
-      <a href="#cta" class="btn btn-primary header__cta">無料診断・デモを依頼</a>
-      <button class="header__hamburger" id="hamburger" aria-label="メニュー">
-        <span></span><span></span><span></span>
-      </button>
+  <div class="selector">
+    <h1 class="selector__title">HR Ad-Optimizer LP</h1>
+    <p class="selector__subtitle">3パターンのランディングページデザイン</p>
+    <div class="selector__cards">
+      <a href="pattern1.html" class="selector__card">
+        <div class="selector__card-number">01</div>
+        <h2 class="selector__card-title">感情訴求型</h2>
+        <p class="selector__card-desc">コピーライティング特化。ターゲットの「痛み」に共感し、感情に訴えかける構成。</p>
+        <span class="selector__card-tag selector__card-tag--emotion">Emotion-driven</span>
+      </a>
+      <a href="pattern2.html" class="selector__card">
+        <div class="selector__card-number">02</div>
+        <h2 class="selector__card-title">ロジカル訴求型</h2>
+        <p class="selector__card-desc">機能・仕様特化。プロダクトの技術力とシステム仕様を論理的に訴求する構成。</p>
+        <span class="selector__card-tag selector__card-tag--logic">Logic-driven</span>
+      </a>
+      <a href="pattern3.html" class="selector__card">
+        <div class="selector__card-number">03</div>
+        <h2 class="selector__card-title">ビジュアル訴求型</h2>
+        <p class="selector__card-desc">レイアウト特化。UIモックアップとステップフローで直感的に伝える構成。</p>
+        <span class="selector__card-tag selector__card-tag--visual">Visual-driven</span>
+      </a>
     </div>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- Hero Section (First View) -->
-    <section id="hero" class="hero section-padding">
-      <div class="container grid grid-2 hero__inner">
-        <div class="hero__content">
-          <h1 class="hero__title">
-            <span class="hero__title-accent">「指摘」だけのAIは、もういらない。</span><br>
-            1,000件の原稿を、「安全」で「応募が来る」完成稿へ。
-          </h1>
-          <p class="hero__subtitle">
-            求人広告のプロ（認定パートナー）が開発。<br>
-            「コンプラチェック」も「魅力化リライト」も、あなたの仕事は<strong>承認ボタンを押すだけ</strong>。<br>
-            現場のスキルに依存しない、最強の運用体制をCSV一括処理で実現します。
-          </p>
-          <div class="hero__badges">
-            <div class="hero__badge">
-              <span class="hero__badge-label">Developed by</span>
-              <span class="hero__badge-value">Indeed Silver+ Partner</span>
-            </div>
-            <div class="hero__badge">
-              <span class="hero__badge-label">Tech</span>
-              <span class="hero__badge-value">独自コンテキスト搭載ハイブリッドAI</span>
-            </div>
-            <div class="hero__badge">
-              <span class="hero__badge-label">Compliance</span>
-              <span class="hero__badge-value">最新法令・媒体ポリシー完全準拠</span>
-            </div>
-          </div>
-          <div class="hero__cta">
-            <a href="#cta" class="btn btn-primary btn-lg">あなたのCSVで「修正精度」を試す（無料診断）</a>
-            <p class="hero__cta-note">※他社代理店をご利用中の方も導入可能です</p>
-          </div>
-        </div>
-        <div class="hero__visual">
-          <div class="hero__mockup">
-            <div class="hero__mockup-flow">
-              <div class="hero__mockup-step hero__mockup-step--error">
-                <div class="hero__mockup-icon">CSV</div>
-                <div class="hero__mockup-label">エラーだらけの原稿</div>
-              </div>
-              <div class="hero__mockup-arrow">&rarr;</div>
-              <div class="hero__mockup-step hero__mockup-step--process">
-                <div class="hero__mockup-icon">AI</div>
-                <div class="hero__mockup-label">AI処理</div>
-              </div>
-              <div class="hero__mockup-arrow">&rarr;</div>
-              <div class="hero__mockup-step hero__mockup-step--clean">
-                <div class="hero__mockup-icon">&#10003;</div>
-                <div class="hero__mockup-label">クリーンな完成稿</div>
-              </div>
-            </div>
-            <div class="hero__mockup-approve">
-              <button class="hero__approve-btn">Approve</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Problems Section (Introduction & Challenges) -->
-    <section id="problems" class="problems section-padding">
-      <div class="container">
-        <h2 class="section-title">原稿数が100を超えたとき、<br>現場は「思考停止」に陥っていませんか？</h2>
-        <p class="section-subtitle">毎日のように届く新規オーダー、終わらない更新作業。派遣会社や多店舗展開企業の現場では、今この瞬間も<strong>「2つの巨大なリスク」</strong>が進行しています。</p>
-        <div class="grid grid-3 problems__cards">
-          <div class="problems__card">
-            <div class="problems__card-icon problems__card-icon--attack">&#128221;</div>
-            <h3 class="problems__card-title">攻めの崩壊<br><small>薄い原稿の量産</small></h3>
-            <p class="problems__card-text">「軽作業、時給1,200円、以上。」<br>多忙な営業担当は、ヒアリングの時間もライティングのスキルもない。求職者に何も刺さらない「スカスカの原稿」が量産され、<strong>応募が来ない負のループ</strong>に。</p>
-          </div>
-          <div class="problems__card">
-            <div class="problems__card-icon problems__card-icon--defense">&#9888;&#65039;</div>
-            <h3 class="problems__card-title">守りの限界<br><small>コンプラ違反の放置</small></h3>
-            <p class="problems__card-text">拠点ごとに異なるリテラシー。知らない間に使われている「NGワード」。<strong>Indeedのアカウント停止（レベル3：永久凍結）</strong>のリスクに怯えながら、目視チェックで消耗していませんか？</p>
-          </div>
-          <div class="problems__card">
-            <div class="problems__card-icon problems__card-icon--ai">&#129302;</div>
-            <h3 class="problems__card-title">既存AIへの失望<br><small>「可能性」ばかりの大量指摘</small></h3>
-            <p class="problems__card-text">「違反の可能性があります」──そんな曖昧で大量の指摘は、忙しいあなたにとってノイズでしかありません。<strong>欲しいのは「指摘」ではなく、今すぐ入稿できる「修正案」</strong>のはずです。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section id="solution" class="solution section-padding">
-      <div class="container">
-        <h2 class="section-title">必要なのは、CSVをドラッグ＆ドロップするだけ。<br>「プロの知見」×「AI」で、原稿作成は<span class="text-accent">『承認作業』</span>に変わります。</h2>
-        <div class="solution__steps">
-          <div class="solution__step">
-            <div class="solution__step-number">STEP 1</div>
-            <div class="solution__step-icon">&#128229;</div>
-            <h3 class="solution__step-title">Import</h3>
-            <p class="solution__step-text">CSVを一括アップロード。今の運用フローを変えずに導入可能。他社システムのデータをそのままインポート。</p>
-          </div>
-          <div class="solution__step-arrow">&#10132;</div>
-          <div class="solution__step">
-            <div class="solution__step-number">STEP 2</div>
-            <div class="solution__step-icon">&#9881;&#65039;</div>
-            <h3 class="solution__step-title">Process</h3>
-            <div class="solution__step-tags">
-              <span class="solution__tag solution__tag--attack">Attack: 魅力化リライト</span>
-              <span class="solution__tag solution__tag--defense">Defense: 鉄壁の監査</span>
-            </div>
-            <p class="solution__step-text">独自のインサイトで「魅力化リライト」。最新法令・媒体ポリシーで「鉄壁の監査」。</p>
-          </div>
-          <div class="solution__step-arrow">&#10132;</div>
-          <div class="solution__step">
-            <div class="solution__step-number">STEP 3</div>
-            <div class="solution__step-icon">&#9989;</div>
-            <h3 class="solution__step-title">Approval</h3>
-            <div class="solution__step-actions">
-              <span class="solution__action solution__action--approve">承認</span>
-              <span class="solution__action solution__action--reject">却下</span>
-              <span class="solution__action solution__action--edit">手動修正</span>
-            </div>
-            <p class="solution__step-text">AIが作った「完成原稿」を、担当者が承認・却下・手動修正するだけ。Human-in-the-Loop。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Section (Feature Details) -->
-    <section id="features"></section>
-
-    <!-- Evolution Section (Learning & Evolution) -->
-    <section id="evolution"></section>
-
-    <!-- Authority Section (Developer Information) -->
-    <section id="authority"></section>
-
-    <!-- Use Cases Section (Case Studies) -->
-    <section id="usecases"></section>
-
-    <!-- CTA Section (Closing) -->
-    <section id="cta"></section>
-  </main>
-
-  <!-- Footer -->
-  <footer></footer>
-
-  <!-- JavaScript -->
-  <script src="js/main.js" defer></script>
+  </div>
 </body>
 </html>
