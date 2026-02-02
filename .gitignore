@@ -1,0 +1,14 @@
+# Claude Code Harness state files
+.claude/state/
+.claude/sessions/
+.claude/memory/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/settings.json
