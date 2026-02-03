@@ -180,7 +180,7 @@ body.p5-body {
   min-height: 100vh;
   display: flex;
   align-items: flex-start;
-  padding: calc(var(--space-4xl) + 5rem) 0 var(--space-4xl);
+  padding: calc(var(--space-4xl) + 8rem) 0 var(--space-4xl);
 }
 
 .p5-hero .container {
