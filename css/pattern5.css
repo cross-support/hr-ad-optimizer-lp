@@ -179,8 +179,8 @@ body.p5-body {
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  padding: var(--space-4xl) 0;
+  align-items: flex-start;
+  padding: calc(var(--space-4xl) + 5rem) 0 var(--space-4xl);
 }
 
 .p5-hero .container {
