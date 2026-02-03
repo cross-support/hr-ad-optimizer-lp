@@ -228,7 +228,7 @@ body.p5-body {
   background-clip: text;
   margin-bottom: var(--space-md);
   font-weight: 700;
-  font-size: clamp(2.75rem, 7vw + 0.5rem, 4.25rem);
+  font-size: clamp(3.25rem, 8vw + 1rem, 5rem);
 }
 
 .p5-hero__subtitle {
@@ -1006,7 +1006,7 @@ body.p5-body {
 
   .p5-hero__accent {
     white-space: normal;
-    font-size: clamp(1.5rem, 6vw, 2.2rem);
+    font-size: clamp(2rem, 7vw, 2.75rem);
   }
 
   .p5-hero__content {
