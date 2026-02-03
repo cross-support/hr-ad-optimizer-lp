@@ -208,7 +208,7 @@ body.p5-body {
   z-index: 2;
   padding: var(--space-2xl) 0;
   max-width: 55%;
-  margin-left: 0;
+  margin-left: 5%;
   margin-right: auto;
   text-align: left;
 }
