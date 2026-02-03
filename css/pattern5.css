@@ -185,11 +185,9 @@ body.p5-body {
 
 .p5-hero .container {
   max-width: none;
-  width: 95%;
   margin-left: 4%;
   margin-right: auto;
-  position: relative;
-  z-index: 2;
+  width: 95%;
 }
 
 /* Background Image */
@@ -206,9 +204,13 @@ body.p5-body {
 }
 
 .p5-hero__content {
-  max-width: 640px;
-  text-align: left;
+  position: relative;
+  z-index: 2;
   padding: var(--space-2xl) 0;
+  max-width: 55%;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
 }
 
 .p5-hero__title {
@@ -245,12 +247,18 @@ body.p5-body {
   gap: var(--space-sm);
   flex-wrap: wrap;
   margin-bottom: var(--space-xl);
+  padding-left: 2rem;
+}
+
+.p5-hero__content .p5-btn-cta {
+  margin-left: 2rem;
 }
 
 .p5-hero__note {
   font-size: var(--font-size-sm);
   color: var(--p5-text-light);
   margin-top: var(--space-md);
+  padding-left: 2rem;
 }
 
 /* ========================================
@@ -1003,6 +1011,7 @@ body.p5-body {
 
   .p5-hero__content {
     max-width: 100%;
+    border-radius: var(--radius-lg);
   }
 
   /* Problems Grid */
